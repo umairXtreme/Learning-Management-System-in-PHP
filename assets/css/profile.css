@@ -1,0 +1,110 @@
+/* 🌐 Base Reset */
+body, html {
+    height: 100vh;
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 📦 Main Content Area */
+.main-content {
+    width: auto;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* 🧾 Profile Wrapper (Max width for desktop) */
+.profile-wrapper {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 📸 Profile Image Styling */
+.profile-picture-wrapper {
+    align-items: center;
+}
+
+.profile-picture-wrapper img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.profile-picture-wrapper input[type="file"] {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* 📝 Form Labels */
+.form-label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #333;
+}
+
+/* 📥 Inputs & Fields */
+input.form-control,
+textarea.form-control,
+select.form-select {
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 10px 14px;
+}
+
+/* 💾 Submit Button */
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ Alert Box */
+.alert {
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+/* 🔻 Section Divider */
+hr {
+    border-top: 1px solid #dee2e6;
+}
+
+/* 📱 Mobile View Fixes */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-wrapper {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-picture-wrapper img {
+        width: 140px;
+        height: 140px;
+    }
+
+    button.btn-primary {
+        width: 100%;
+    }
+}

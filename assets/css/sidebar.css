@@ -1,0 +1,118 @@
+/* 📦 Base Sidebar */
+.student-sidebar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 250px;
+    background: #343a40;
+    color: white;
+    padding: 20px;
+    margin-top:75px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Desktop - Sidebar always visible */
+@media (min-width: 769px) {
+    .student-sidebar {
+        transform: translateX(0); /* Always shown */
+    }
+
+    .sidebar-toggle {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-left: 250px;
+        padding: 30px;
+    }
+}
+
+/* 🔁 Collapsed Sidebar - Default Mobile */
+@media (max-width: 768px) {
+    .student-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .student-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar-toggle {
+        display: block;
+        background: #007bff;
+        color: white;
+        border: none;
+        font-size: 20px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 70px 15px 15px;
+    }
+}
+
+/* 🧭 Sidebar Elements */
+.sidebar-title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 15px;
+}
+
+.sidebar-menu a i {
+    margin-right: 8px;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu .active {
+    background-color: #007BFF;
+}
+
+/* 🔓 Logout Button */
+.logout-btn {
+    background: red;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: red;
+}

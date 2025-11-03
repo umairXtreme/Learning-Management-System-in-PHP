@@ -1,0 +1,41 @@
+/* 🌐 Base Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Dashboard Utility Enhancements */
+
+.dashboard-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #343a40;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* 🔍 Search Bar Styling */
+#userSearch {
+    border-radius: 6px;
+    border: 1px solid #0d6efd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+#userSearch:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+/* 📋 Table Border Polishing */
+.table-striped > tbody > tr > td{
+    border: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: middle;
+}

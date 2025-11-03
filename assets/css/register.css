@@ -1,0 +1,96 @@
+/* Reset default margin & ensure full-page layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Background Full-Screen Effect */
+.register-bg {
+    width: 100%;
+    flex-grow: 1; /* Ensures the form takes available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px; /* Prevents form from overlapping navbar */
+    padding-bottom: 60px; /* Ensures footer stays at the bottom */
+}
+
+/* Registration Form Box */
+.register-box {
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency for a modern look */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px; /* Decreased width for better layout */
+    text-align: left;
+    padding: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo Styling */
+.register-logo {
+    max-width: 180px; /* Adjusted for better proportion */
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+.register-box .form-control {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.register-box button {
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #004085;
+    color: beige; /* Darker blue on hover */
+}
+
+/* Tabs (Switch Between Student & Instructor) */
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #FFC107 !important; /* Yellow color */
+    color: #000;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Tab Content */
+.tab-content {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .register-box {
+        max-width: 90%;
+    }
+}

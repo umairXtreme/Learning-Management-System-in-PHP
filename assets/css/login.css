@@ -1,0 +1,64 @@
+/* Reset default margin & ensure full-page layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Login Form Box */
+.login-box {
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency for a modern look */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 360px; /* Decreased width for better structure */
+    text-align: left;
+    padding: 25px;
+    font-weight: 500;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo Styling */
+.login-logo {
+    max-width: 180px; /* Adjusted for better proportion */
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+.login-box .form-control {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.login-box button {
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #004085; /* Darker blue on hover */
+}
+
+/* Link Styling */
+.login-box p a {
+    color: #004085;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-box p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 90%;
+    }
+}
